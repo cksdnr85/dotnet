@@ -1,8 +1,110 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.login-form {
+			background-color: #fff;
+			width: 400px;
+			margin: 100px auto;
+			padding: 50px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+		
+		input[type="text"], input[type="password"] {
+			display: block;
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		
+		.register-link, .forgot-link {
+			display: block;
+			margin-bottom: 20px;
+			text-align: center;
+			color: #777;
+			text-decoration: none;
+			font-size: 14px;
+		}
+		
+		.register-link:hover, .forgot-link:hover {
+			color: #4CAF50;
+		}
+		
+		.social-login {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		
+		.social-login button {
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		}
+		
+		.social-login button:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		
+		.social-login button img {
+			height: 30px;
+		}
+	</style>
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<title>로그인</title>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome123</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+</head>
+<body>
+	<div class="login-form">
+		<h1>로그인</h1>
+		<form>
+			<input type="text" placeholder="아이디/이메일">
+			<input type="password" placeholder="비밀번호">
+			<input type="submit" value="로그인">
+		</form>
+		<a href="#" class="register-link">회원가입</a>
+		@* <div class="social-login">
+			<button>
+				<img src="google.png" alt="Google 아이콘">
+				Google 로그인
+			</button>
+			<button>
+				<img src="facebook.png" alt="Facebook 아이콘">
+				Facebook 로그인
+			</button>
+			<button>
+				<img src="kakao.png" alt="Kakao 아이콘">
+				Kakao 로그인
+			</button>
+		</div> *@
+		<a href="#" class="forgot-link">비밀번호 찾기</a>
+	</div>
+</body>
+
